@@ -7,19 +7,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const easeFactor = 0.1; // 调整这个值来控制加速度和减速度
 
     function updatePosition() {
-        // 计算差异
-        const dx = targetX - currentX;
-        const dy = targetY - currentY;
+        // 使用线性插值计算方块位置接近鼠标位置的方式
+        if(Math.abs(targetX - currentX) > 1 || Math.abs(targetY - currentY) > 1) {
+            currentX += (targetX - currentX) * easeFactor;
+            currentY += (targetY - currentY) * easeFactor;
 
-        // 根据差异计算下一个位置
-        currentX += dx * easeFactor;
-        currentY += dy * easeFactor;
+            block.style.left = `${currentX}px`;
+            block.style.top = `${currentY}px`;
+        }
 
-        // 更新方块的位置
-        block.style.left = `${currentX}px`;
-        block.style.top = `${currentY}px`;
-
-        // 递归调用下一帧的更新
         requestAnimationFrame(updatePosition);
     }
 
@@ -29,9 +25,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         targetY = e.clientY - block.clientHeight / 2;
     }
 
-    // 启动动画循环
-    requestAnimationFrame(updatePosition);
-
     // 监听鼠标移动事件
     document.addEventListener('mousemove', mouseMoveHandler);
+
+    // 启动动画循环
+    requestAnimationFrame(updatePosition);
 });
