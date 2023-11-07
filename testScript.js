@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+document.getElementById('game-container').addEventListener('mousedown', (e) => {
+    console.log('Mouse down event triggered');
     const block = document.getElementById('block');
     let posX = 0;
     let posY = 0;
