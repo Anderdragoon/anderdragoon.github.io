@@ -46,11 +46,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // 监听鼠标点击事件
     document.addEventListener('mousedown', (e) => {
-        // 更新目标位置
-        targetX = e.clientX - block.clientWidth / 2;
-        targetY = e.clientY - block.clientHeight / 2;
+        const rect = block.parentElement.getBoundingClientRect(); // 获取game-container的位置和大小
+        // 计算点击位置相对于game-container的位置
+        targetX = e.clientX - rect.left - block.clientWidth / 2;
+        targetY = e.clientY - rect.top - block.clientHeight / 2;
         moving = true; // 开始移动
-
+    
         // 开始动画循环
         requestAnimationFrame(animate);
     });
