@@ -4,7 +4,6 @@ html, body {
     margin: 0;
     padding: 0;
     /* 确保子元素占满整个页面 */
-    overflow: hidden; /* 防止滚动条影响 */
     background-color: #7fd4ff;
     font-family: Arial, sans-serif;
     cursor: url('dragonCursorCalm32x32.png')16 16, auto;
@@ -12,6 +11,14 @@ html, body {
 
 .click-cursor, .click-cursor * {
     cursor: url('dragonCursorSmile32x32.png')16 16, auto; /* 鼠标按下时的光标 */
+}
+
+button, a {
+    cursor: url('dragonCursorCalm32x32.png')16 16, auto; /* 鼠标非按下状态 */
+}
+
+body.click-cursor button, body.click-cursor a {
+    cursor: url('dragonCursorSmile32x32.png')16 16, auto; /* 鼠标按下状态 */
 }
 
 h1 {
