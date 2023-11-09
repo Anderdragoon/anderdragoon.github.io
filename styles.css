@@ -5,9 +5,9 @@ html, body {
     padding: 0;
     /* 确保子元素占满整个页面 */
     overflow: hidden; /* 防止滚动条影响 */
-    cursor: url('dragonCursorCalm32x32.png')16 16, auto;
-    background-color: #ff7f7f;
+    background-color: #7fd4ff;
     font-family: Arial, sans-serif;
+    cursor: url('dragonCursorCalm32x32.png')16 16, auto;
 }
 
 .click-cursor, .click-cursor * {
