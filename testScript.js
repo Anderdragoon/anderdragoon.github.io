@@ -1,22 +1,15 @@
-// 为所有元素添加mousedown事件监听器
 window.addEventListener('mousedown', function() {
-    // 添加click-cursor类到所有元素
-    document.querySelectorAll('*').forEach(function(el) {
-        el.classList.add('click-cursor');
-    });
+    setCursor('dragonCursorSmile-32x32.png', 16, 16);
 });
 
-// 为所有元素添加mouseup事件监听器
 window.addEventListener('mouseup', function() {
-    // 移除所有元素的click-cursor类
-    document.querySelectorAll('*').forEach(function(el) {
-        el.classList.remove('click-cursor');
-    });
+    setCursor('dragonCursorCalm-32x32.png', 16, 16);
 });
 
-// 当鼠标离开窗口时移除click-cursor类
-window.addEventListener('mouseleave', function() {
+function setCursor(imagePath, x, y) {
+    // 设置内联样式的优先级更高
+    document.body.style.cursor = `url('${imagePath}') ${x} ${y}, auto`;
     document.querySelectorAll('*').forEach(function(el) {
-        el.classList.remove('click-cursor');
+        el.style.cursor = `url('${dragonCursorSmile32x32.png}') ${x} ${y}, auto`;
     });
-});
+}
