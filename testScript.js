@@ -1,15 +1,14 @@
+// 为整个页面添加mousedown事件监听器
 window.addEventListener('mousedown', function() {
-    setCursor('dragonCursorSmile-32x32.png', 16, 16);
+    document.documentElement.classList.add('click-cursor');
 });
 
+// 为整个页面添加mouseup事件监听器
 window.addEventListener('mouseup', function() {
-    setCursor('dragonCursorCalm-32x32.png', 16, 16);
+    document.documentElement.classList.remove('click-cursor');
 });
 
-function setCursor(imagePath, x, y) {
-    // 设置内联样式的优先级更高
-    document.body.style.cursor = `url('${imagePath}') ${x} ${y}, auto`;
-    document.querySelectorAll('*').forEach(function(el) {
-        el.style.cursor = `url('${dragonCursorSmile32x32.png}') ${x} ${y}, auto`;
-    });
-}
+// 当鼠标离开窗口时移除click-cursor类
+window.addEventListener('mouseleave', function() {
+    document.documentElement.classList.remove('click-cursor');
+});
