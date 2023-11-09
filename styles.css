@@ -1,16 +1,17 @@
 html, body {
     width: 100%;
-    height: 100%; /* 确保占满至少整个视口的高度 */
+    height: 100%;
     margin: 0;
     padding: 0;
-    cursor: url('dragonCursorCalm32x32.png'), auto; /* 默认光标 */
+    /* 确保子元素占满整个页面 */
+    overflow: hidden; /* 防止滚动条影响 */
+    cursor: url('dragonCursorCalm32x32.png')16 16, auto;
+    background-color: #ff7f7f;
+    font-family: Arial, sans-serif;
 }
 
-/* 为简化问题，我们不用 !important 标记，但是确保没有其他CSS规则覆盖它 */
 .click-cursor, .click-cursor * {
-    cursor: url('dragonCursorSmile32x32.png'), auto; /* 鼠标按下时的光标 */
-    background-color: #7fff81;
-    font-family: Arial, sans-serif;
+    cursor: url('dragonCursorSmile32x32.png')16 16, auto; /* 鼠标按下时的光标 */
 }
 
 h1 {
