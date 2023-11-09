@@ -1,11 +1,22 @@
+// 为所有元素添加mousedown事件监听器
 window.addEventListener('mousedown', function() {
-    document.body.classList.add('click-cursor');
+    // 添加click-cursor类到所有元素
+    document.querySelectorAll('*').forEach(function(el) {
+        el.classList.add('click-cursor');
+    });
 });
 
+// 为所有元素添加mouseup事件监听器
 window.addEventListener('mouseup', function() {
-    document.body.classList.remove('click-cursor');
+    // 移除所有元素的click-cursor类
+    document.querySelectorAll('*').forEach(function(el) {
+        el.classList.remove('click-cursor');
+    });
 });
 
+// 当鼠标离开窗口时移除click-cursor类
 window.addEventListener('mouseleave', function() {
-    document.body.classList.remove('click-cursor');
+    document.querySelectorAll('*').forEach(function(el) {
+        el.classList.remove('click-cursor');
+    });
 });
