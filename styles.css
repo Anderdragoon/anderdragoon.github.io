@@ -1,16 +1,16 @@
 html, body {
-    background-color: #d79bc3;
+    background-color: #d5d79b;
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
     /* 确保子元素占满整个页面 */
     font-family: Arial, sans-serif;
-    cursor: url('dragonCursorCalm32x32.png')16 16, auto;
+    cursor: url('logos/dragonCursorCalm32x32.png')16 16, auto;
 }
 
 *, *:hover {
-    cursor: url('dragonCursorCalm32x32.png'), auto;
+    cursor: url('logos/dragonCursorCalm32x32.png'), auto;
 }
 
 h1 {
