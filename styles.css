@@ -1,5 +1,5 @@
 html, body {
-    background-color: #d5d79b;
+    background-color: #9bd7d7;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -9,8 +9,8 @@ html, body {
     cursor: url('logos/dragonCursorCalm32x32.png')16 16, auto;
 }
 
-*, *:hover {
-    cursor: url('logos/dragonCursorCalm32x32.png'), auto;
+button, button:hover {
+    cursor: url('logos/dragonCursorSmile32x32.png')16 16, auto;
 }
 
 h1 {
