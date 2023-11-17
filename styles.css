@@ -1,5 +1,5 @@
 html, body {
-    background-color: #ae9bd7;
+    background-color: #9bd7ba;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -9,36 +9,16 @@ html, body {
     cursor: url('dragonCursorCalm32x32.png')16 16, auto;
 }
 
-.click-cursor, .click-cursor * {
-    cursor: url('dragonCursorSmile32x32.png')16 16, auto; /* 鼠标按下时的光标 */
-}
-
 button, a {
-    cursor: url('dragonCursorCalm32x32.png')16 16, auto; /* 鼠标非按下状态 */
+    cursor: url('dragonCursorCalm32x32.png')16 16, auto;
 }
 
-body.click-cursor button, body.click-cursor a {
-    cursor: url('dragonCursorSmile32x32.png')16 16, auto; /* 鼠标按下状态 */
-}
-
-/* 应用到所有元素，确保没有悬停时也有自定义光标 */
 *, *:hover {
     cursor: url('dragonCursorCalm32x32.png'), auto;
 }
 
-/* 为按下状态定义光标，同时确保悬停时也能保持一致 */
-body.click-cursor, body.click-cursor *:hover {
-    cursor: url('dragonCursorSmile32x32.png'), auto;
-}
-
-/* 为按钮和链接特别定义，确保它们在点击和悬停时也有相应的自定义光标 */
 button, a, button:hover, a:hover {
     cursor: url('dragonCursorCalm32x32.png'), auto;
-}
-
-body.click-cursor button, body.click-cursor a,
-body.click-cursor button:hover, body.click-cursor a:hover {
-    cursor: url('dragonCursorSmile32x32.png'), auto;
 }
 
 h1 {
