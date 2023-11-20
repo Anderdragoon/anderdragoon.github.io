@@ -13,22 +13,20 @@
             <img src="pics/headNews3840x270.png" alt="Description of Image" class="center-image">
             <button>Open New Page</button>
         </a>
-        <h1>Hello World,</h1>
-        <p>I'm Ander.</p>
 
+        <div class="sidebar">
+            <button onclick="scrollToImage('shelf1')">Shelf 1</button>
+            <button onclick="scrollToImage('shelf2')">Shelf 2</button>
+            <button onclick="scrollToImage('shelf3')">Shelf 3</button>
+        </div>
+    
+        <div class="shelf-container">
+            <img id="shelf1" src="pics/blankShelf2880x2160A.png" alt="Shelf 1">
+            <img id="shelf2" src="pics/blankShelf2880x2160B.png" alt="Shelf 2">
+            <img id="shelf3" src="pics/blankShelf2880x2160C.png" alt="Shelf 3">
+        </div>
+        
+        <script src="testScript.js"></script>
     </body>
 
-    <div class="sidebar">
-        <button onclick="scrollToImage('shelf1')">Shelf 1</button>
-        <button onclick="scrollToImage('shelf2')">Shelf 2</button>
-        <button onclick="scrollToImage('shelf3')">Shelf 3</button>
-    </div>
-
-    <div class="shelf-container">
-        <img id="shelf1" src="pics/blankShelf2880x2160A.png" alt="Shelf 1">
-        <img id="shelf2" src="pics/blankShelf2880x2160B.png" alt="Shelf 2">
-        <img id="shelf3" src="pics/blankShelf2880x2160C.png" alt="Shelf 3">
-    </div>
-
-    <script src="testScript.js"></script>
 </html>
