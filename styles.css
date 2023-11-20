@@ -1,5 +1,5 @@
 html, body {
-    background-color: #ff7aa4;
+    background-color: #7a8eff;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -64,7 +64,6 @@ img {
     cursor: pointer;
     padding: 15px;
     border-radius: 10px;
-    display: none; /* 默认隐藏按钮 */
   }
   
   #backToTop:hover {
