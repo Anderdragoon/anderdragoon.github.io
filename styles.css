@@ -1,5 +1,5 @@
 html, body {
-    background-color: #ff8ff6;
+    background-color: #ff8f8f;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -9,9 +9,9 @@ html, body {
     cursor: url('logos/pixelDragonCursor32x32.png')16 16, auto;
 }
 
-button, button:hover {
+/*button, button:hover {
     cursor: url('logos/pixelDragonCursorSmile32x32.png')16 16, auto;
-}
+}*/
 
 img {
     cursor: url('logos/pixelDragonCursorSmile32x32.png')16 16, auto;
