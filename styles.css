@@ -1,5 +1,5 @@
 html, body {
-    background-color: #9b9cd7;
+    background-color: #9bd3d7;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -7,15 +7,22 @@ html, body {
     font-family: Arial, sans-serif;
     cursor: url('logos/pixelDragonCursor32x32.png')16 16, auto;
 }
-
 button, button:hover {
     cursor: url('logos/pixelDragonCursorSmile32x32.png')16 16, auto;
 }
-
+img {
+    cursor: url('logos/pixelDragonCursorSmile32x32.png'), auto;
+}
+.center-image {
+    display: block; /* 将图片作为块级元素处理 */
+    margin-left: auto; /* 左边距自动调整 */
+    margin-right: auto; /* 右边距自动调整 */
+    width: 100%; /* 图片宽度调整为容器的100% */
+    height: auto; /* 高度自动调整以保持宽高比 */
+}
 h1 {
     color: #333;
 }
-
 p {
     color: #666;
 }
