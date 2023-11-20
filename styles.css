@@ -1,5 +1,5 @@
 html, body {
-    background-color: #a89bd7;
+    background-color: #ffe18f;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -25,20 +25,6 @@ img {
     height: auto; /* 高度自动调整以保持宽高比 */
 }
 
-.sidebar {
-    position: fixed; /* 固定位置，随滚动条移动 */
-    left: 0;
-    top: 0;
-    width: 960px; /* 目录宽度 */
-    height: 100%;
-    background-image: url('pics/sideBar960x2160.png');
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .shelf-container {
     margin-left: 960px; /* 等于sidebar的宽度 */
 }
@@ -47,6 +33,20 @@ img {
     width: 2880px;
     height: 2160px;
     display: block; /* 避免图片间有间隙 */
+}
+
+.sidebar {
+    position: fixed; /* 固定位置，随滚动条移动 */
+    left: 0;
+    top: 0;
+    width: 25%; /* 目录宽度 */
+    height: 100%;
+    background-image: url('pics/sideBar960x2160.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
