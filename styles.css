@@ -1,5 +1,5 @@
 html, body {
-    background-color: #ffe18f;
+    background-color: #8fff9e;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -26,12 +26,12 @@ img {
 }
 
 .shelf-container {
-    margin-left: 960px; /* 等于sidebar的宽度 */
+    margin-left: 25%;
 }
 
 .shelf-container img {
-    width: 2880px;
-    height: 2160px;
+    width: 100%;
+    height: auto;
     display: block; /* 避免图片间有间隙 */
 }
 
@@ -39,7 +39,7 @@ img {
     position: fixed; /* 固定位置，随滚动条移动 */
     left: 0;
     top: 0;
-    width: 25%; /* 目录宽度 */
+    width: 25%;
     height: 100%;
     background-image: url('pics/sideBar960x2160.png');
     background-size: cover;
