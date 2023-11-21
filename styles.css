@@ -1,5 +1,5 @@
 html, body {
-    background-color: #e4ff7a;
+    background-color: #613a72;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -20,6 +20,7 @@ img {
 .center-image {
     display: block; /* 将图片作为块级元素处理 */
     margin-left: 25%; /* 左边距设置为视窗宽度的25% */
+    margin-right: 0;
     width: auto; /* 可能需要调整的图片宽度 */
     height: auto; /* 高度自动调整以保持宽高比 */
 }
