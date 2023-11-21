@@ -1,5 +1,5 @@
 html, body {
-    background-color: #b47aff;
+    background-color: #ffc17a;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -51,6 +51,26 @@ img {
     z-index: 1; /* 确保侧边栏在内容之上 */
 }
 
+.sidebar button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: url('logos/pixelDragonCursorSmile32x32.png')16 16, auto;
+    transition: 0.3s;
+}
+
+.sidebar button:hover {
+    background-color: #45a049;
+}
+
+.sidebar button:focus {
+    outline: none;
+    box-shadow: 0 0 3px 2px #4CAF50;
+}
+
 #backToTop {
     position: fixed;
     bottom: 20px;
@@ -59,16 +79,28 @@ img {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #555;
+    background-color: #999;
     color: white;
     cursor: pointer;
     padding: 15px;
     border-radius: 10px;
   }
   
-  #backToTop:hover {
+#backToTop:hover {
     background-color: #333;
   }
+
+#shelf1 {
+    cursor: url('logos/pixelDragonCursorSmile32x32.png')16 16, auto;
+}
+
+#shelf2 {
+    cursor: url('logos/pixelDragonCursorSmile32x32.png')16 16, auto;
+}
+
+#shelf3 {
+    cursor: url('logos/pixelDragonCursorSmile32x32.png')16 16, auto;
+}
 
 h1 {
     color: #333;
