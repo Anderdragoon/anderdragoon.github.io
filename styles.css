@@ -1,5 +1,5 @@
 html, body {
-    background-color: #724c3a;
+    background-color: #3a6e72;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -60,7 +60,7 @@ img {
     background-image: url('pics/sideBar960x1890.png');
     background-size: contain; /* 更改为contain以确保图片完整显示 */
     background-repeat: no-repeat; /* 防止背景图片重复 */
-    background-position: center; /* 垂直居中 */
+    background-position: top;
     display: flex;
     flex-direction: column;
     align-items: center;
