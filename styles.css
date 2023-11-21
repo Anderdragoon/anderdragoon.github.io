@@ -1,5 +1,5 @@
 html, body {
-    background-color: #ffc17a;
+    background-color: #ff7ab8;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -43,12 +43,22 @@ img {
     width: 25%;
     height: 100%;
     background-image: url('pics/sideBar960x2160.png');
-    background-size: cover;
+    background-size: contain; /* 更改为contain以确保图片完整显示 */
+    background-repeat: no-repeat; /* 防止背景图片重复 */
+    background-position: center; /* 垂直居中 */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 1; /* 确保侧边栏在内容之上 */
+}
+
+/* 媒体查询示例，针对更小的屏幕调整 */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 30%; /* 在小屏幕上增加宽度 */
+        /* 可以添加更多样式调整 */
+    }
 }
 
 .sidebar button {
@@ -68,7 +78,7 @@ img {
 
 .sidebar button:focus {
     outline: none;
-    box-shadow: 0 0 3px 2px #4CAF50;
+    box-shadow: 0 0 3px 2px #252525;
 }
 
 #backToTop {
@@ -91,15 +101,15 @@ img {
   }
 
 #shelf1 {
-    cursor: url('logos/pixelDragonCursorSmile32x32.png')16 16, auto;
+    cursor: url('logos/pixelDragonCursor32x32.png')16 16, auto;
 }
 
 #shelf2 {
-    cursor: url('logos/pixelDragonCursorSmile32x32.png')16 16, auto;
+    cursor: url('logos/pixelDragonCursor32x32.png')16 16, auto;
 }
 
 #shelf3 {
-    cursor: url('logos/pixelDragonCursorSmile32x32.png')16 16, auto;
+    cursor: url('logos/pixelDragonCursor32x32.png')16 16, auto;
 }
 
 h1 {
