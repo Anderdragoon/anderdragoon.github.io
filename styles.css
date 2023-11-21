@@ -1,11 +1,11 @@
 html, body {
-    background-color: #7ad7ff;
+    background-color: #e4ff7a;
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* 防止水平滚动 */
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     cursor: url('logos/pixelDragonCursor32x32.png')16 16, auto;
 }
 
@@ -20,7 +20,7 @@ img {
 .center-image {
     display: block; /* 将图片作为块级元素处理 */
     margin-left: 25%; /* 左边距设置为视窗宽度的25% */
-    width: 50%; /* 可能需要调整的图片宽度 */
+    width: auto; /* 可能需要调整的图片宽度 */
     height: auto; /* 高度自动调整以保持宽高比 */
 }
 
@@ -30,6 +30,11 @@ img {
     left: 0; /* 左侧对齐 */
     width: 25%; /* 图片宽度为视窗宽度的25% */
     height: auto; /* 自动调整高度以保持宽高比 */
+}
+
+.home-link {
+    display: block; /* 确保链接作为块级元素 */
+    text-decoration: none; /* 可选：移除链接下划线 */
 }
 
 .shelf-container {
