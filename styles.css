@@ -1,5 +1,5 @@
 html, body {
-    background-color: #72443a;
+    background-color: #3a4772;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -9,17 +9,14 @@ html, body {
     cursor: url('logos/pixelDragonCursor32x32.png')16 16, auto;
 }
 
-/*button, button:hover {
-    cursor: url('logos/pixelDragonCursorSmile32x32.png')16 16, auto;
-}*/
-
 img {
     cursor: url('logos/pixelDragonCursorSmile32x32.png')16 16, auto;
 }
 
 .news-image {
+    position: relative;
     display: block; /* 将图片作为块级元素处理 */
-    margin-left: 25%; /* 左边距设置为视窗宽度的25% */
+    left: 25%;
     width: 75%; /* 可能需要调整的图片宽度 */
     height: auto; /* 高度自动调整以保持宽高比 */
 }
