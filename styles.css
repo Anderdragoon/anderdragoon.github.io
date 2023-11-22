@@ -1,5 +1,5 @@
 html, body {
-    background-color: #3a4772;
+    background-color: #723a3a;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -16,8 +16,8 @@ img {
 .news-image {
     position: relative;
     display: block; /* 将图片作为块级元素处理 */
-    left: 25%;
-    width: 75%; /* 可能需要调整的图片宽度 */
+    left: 25.25%;
+    width: 74.75%; /* 可能需要调整的图片宽度 */
     height: auto; /* 高度自动调整以保持宽高比 */
 }
 
@@ -38,7 +38,7 @@ img {
 }
 
 .shelf-container {
-    margin-left: 25%;
+    margin-left: 25.25%;
     margin-top: 0; /* 移除上边距 */
 }
 
