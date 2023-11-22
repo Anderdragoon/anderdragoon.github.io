@@ -1,5 +1,5 @@
 html, body {
-    background-color: #3a5f72;
+    background-color: #4f3a72;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -51,10 +51,9 @@ img {
 
 .small-image {
     position: absolute;
-    width: 15%; /* 相对于容器的宽度的百分比 */
-    height: auto; /* 自动调整高度以保持图片比例 */
+    width: 10vw; /* 或者根据您的需要调整 */
+    height: 10vw; /* 保持宽高比为1:1 */
     bottom: 80%; /* 保持在大图的 20% 高度位置 */
-    background-size: cover; /* 确保图片覆盖整个div区域 */
     z-index: 49; 
 }
 
