@@ -1,5 +1,5 @@
 html, body {
-    background-color: #3a724f;
+    background-color: #3a5f72;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -55,6 +55,7 @@ img {
     height: auto; /* 自动调整高度以保持图片比例 */
     bottom: 80%; /* 保持在大图的 20% 高度位置 */
     background-size: cover; /* 确保图片覆盖整个div区域 */
+    z-index: 49; 
 }
 
 #image1 {
