@@ -1,5 +1,5 @@
 html, body {
-    background-color: #723a66;
+    background-color: #3c723a;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -53,12 +53,12 @@ img {
     position: absolute;
     width: 10vw; /* 或者根据您的需要调整 */
     height: 10vw; /* 保持宽高比为1:1 */
-    bottom: 91%; 
+    bottom: 92.375%; 
     background-size: cover; /* 确保图片覆盖整个div区域 */
 }
 
 #image1 {
-    left: 15%; /* 根据需要调整 */
+    left: 14.5%; /* 根据需要调整 */
     background-image: url('preview512px/512pxA.png'); 
 }
 #image2 {
