@@ -1,5 +1,5 @@
 html, body {
-    background-color: #4f3a72;
+    background-color: #725a3a;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -26,7 +26,7 @@ img {
     position: fixed; /* 固定定位 */
     top: 0; /* 顶部对齐 */
     left: 0; /* 左侧对齐 */
-    width: 25%; /* 图片宽度为视窗宽度的25% */
+    width: 25vw; 
     height: auto; /* 自动调整高度以保持宽高比 */
 }
 
@@ -75,7 +75,7 @@ img {
     position: fixed; /* 固定位置，随滚动条移动 */
     left: 0;
     top: 0;
-    width: 25%;
+    width: 25vw;
     height: 100%;
     display: flex;
     flex-direction: column;
