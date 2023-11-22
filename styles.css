@@ -1,5 +1,5 @@
 html, body {
-    background-color: #725a3a;
+    background-color: #3a3f72;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -54,6 +54,7 @@ img {
     width: 10vw; /* 或者根据您的需要调整 */
     height: 10vw; /* 保持宽高比为1:1 */
     bottom: 80%; /* 保持在大图的 20% 高度位置 */
+    background-size: cover; /* 确保图片覆盖整个div区域 */
     z-index: 49; 
 }
 
