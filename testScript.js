@@ -47,7 +47,7 @@ function Particle(x, y, size, color, velocity, life) {
 // 监听鼠标移动事件
 window.addEventListener('mousemove', function(event) {
     // 每次移动时生成新的粒子
-    const particle = new Particle(event.x, event.y, 6, 'grey', {
+    const particle = new Particle(event.x, event.y, 3, 'orange', {
         x: (Math.random() - 0.5) * 2,
         y: (Math.random() - 0.5) * 2
     }, 90); // 假设帧率约为60fps，生命周期设置为120相当于2秒
