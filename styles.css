@@ -13,6 +13,12 @@ img {
     cursor: url('logos/pixelDragonCursorSmile32x32.png')16 16, auto;
 }
 
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .news-image {
     position: relative;
     display: block; /* 将图片作为块级元素处理 */
